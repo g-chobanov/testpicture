@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <strong>Ready to create an app?</strong>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  </div>
+
+  <triton-button (click)="takePicture()">
+    Take a Picture!
+  </triton-button>
+  
+  <div class="taken-pictues" *ngFor="let photo of takenPhotos">
+    <img [src]="photo" />
+  </div>
+
+  <triton-button (click)="saveBlob()">
+    Save
+  </triton-button>
+
+  <img *ngIf="blobUrl" [src]="sanitize(blobUrl)" />
+  
+
+  
+  
+ 
+
+  <!--<triton-pagination (atChange)="thingies($event)" total="10" page-size="5">
+
+  </triton-pagination>-->
+</ion-content>

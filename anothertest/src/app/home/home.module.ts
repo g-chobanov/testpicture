@@ -1,0 +1,24 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { IonicModule } from '@ionic/angular';
+import { FormsModule } from '@angular/forms';
+import { HomePage } from './home.page';
+
+import { HomePageRoutingModule } from './home-routing.module';
+import { TritonClCoreModule } from '.yalc/@kognifai/triton-cl-angular';
+import { PictureSelectorComponentModule } from '../picture-selector/picture-selector.module';
+
+
+@NgModule({
+  imports: [
+    CommonModule,
+    FormsModule,
+    IonicModule,
+    HomePageRoutingModule,
+    TritonClCoreModule,
+    PictureSelectorComponentModule
+  ],
+  declarations: [HomePage],
+  
+})
+export class HomePageModule {}

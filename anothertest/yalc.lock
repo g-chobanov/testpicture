@@ -1,0 +1,15 @@
+{
+  "version": "v1",
+  "packages": {
+    "@kognifai/triton-cl-angular": {
+      "version": "2.0.9",
+      "signature": "8236f64da2553aecbdb4ea7d3b3086f2",
+      "file": true
+    },
+    "@kognifai/triton-cl-core": {
+      "version": "2.0.9",
+      "signature": "45d1b25283fd188e64246f98fd9ed337",
+      "file": true
+    }
+  }
+}
